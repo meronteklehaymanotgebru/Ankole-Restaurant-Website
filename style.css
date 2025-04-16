@@ -1,0 +1,531 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: JMH;
+    src: url(images/JMH\ Typewriter.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(images/Poppins-Regular.ttf);
+}
+
+#slideshows {
+    background-image: url(images/download.jpeg);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* animation: slideshow 20s normal infinite; */
+
+
+}
+
+#slide-image {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    z-index: 1;
+}
+
+#text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 800%;
+    color: gray;
+    z-index: 2;
+    font-family: JMH;
+
+}
+
+.ankole-logo {
+    position: fixed;
+    top: 5%;
+    left: 41%;
+    z-index: 100;
+
+}
+
+
+/* div {
+    width: 100%;
+    height: 100%;
+    background:url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001.jpg);
+    animation-name: screen;
+    animation-iteration-count:infinite;
+    background-repeat: no-repeat;
+    background-size:cover ;
+  } */
+
+/* @keyframes slideshow{
+   0%{  background:url(images/anokle_it_self_720.jpg) no-repeat center center / cover}
+   20%{background: url(images/home_anokle_light.jpg)no-repeat center center / cover}
+    40%{background: url(images/anokle_steak.jpg)no-repeat  center center / cover}
+60%{  background:url(images/anokle_drink.jpg)no-repeat center center / cover}
+80%{background: url(images/anokle_ingredient.jpg)no-repeat center center / cover}
+0%{  background:url(images/anokle_it_self_720.jpg) no-repeat center center / cover}
+
+} */
+.socials {
+    display: flex;
+    position: fixed;
+    top: 5%;
+    gap: 20px;
+    right: 5%;
+    z-index: 200;
+    color: white;
+    cursor: pointer;
+  
+}
+.socials i{
+        border-radius: 50%;
+        border: solid 1px white;
+        padding: 40%;
+        color: white;
+
+  
+}
+
+#whats-app {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 200;
+    color: white;
+    font-size: 250%;
+    padding: 1%;
+    border-radius: 50%;
+    border: solid gray 1px;
+    background-color: black;
+    cursor:pointer;
+
+}
+
+nav {
+    position: fixed;
+    bottom: 5%;
+    left: 25%;
+    z-index: 80;
+    padding: 2%;
+    background-color: black;
+    width: 50%;
+    border-radius: 100px;
+    color: white;
+    font-weight: bolder;
+    word-spacing: 27px;
+    font-family: Poppins;
+
+    .active {
+        background-color: gray;
+
+    }
+
+    .active:hover {
+        color: black;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 2%;
+    }
+
+
+
+}
+
+nav a:hover {
+    color: gray;
+}
+
+nav i {
+    color: gray;
+}
+
+.flip-hover {
+    padding: 2%;
+    background-color: darkgray;
+    border-radius: 50px;
+}
+
+.flip-hover:hover {
+    background-color: white;
+}
+
+.vertical-bar {
+    display: inline-block;
+    bottom: 0%;
+    left: 27%;
+    z-index: 2;
+
+}
+
+.categories {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 220px;
+    bottom: 60%;
+    left: 2%;
+    z-index: 999;
+
+}
+
+.categories a {
+    color: white;
+    padding: 5%;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid gray 1px;
+}
+
+.vertical-bar:hover .categories {
+    display: block;
+}
+
+.opening-hours {
+    display: inline-block;
+    left: 27%;
+    z-index: 3;
+
+}
+
+.opening-details {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    bottom: 60%;
+    left: 2%;
+    border-radius: 30px;
+    z-index:999;
+
+}
+
+.opening-details p {
+    font-weight: lighter;
+    color: black;
+    padding: 1%;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding-left: 10%;
+
+}
+
+.opening-details p:nth-child(2) {
+    font-weight: bolder;
+    padding-bottom: 4%;
+}
+
+.opening-details p:nth-child(5) {
+    font-weight: bolder;
+    padding-bottom: 4%;
+}
+
+.opening-hours:hover .opening-details {
+    display: block;
+}
+/* menu file */
+.kitisuru-branch{
+    background: url(images/download.jpeg);
+    background-repeat: no-repeat;
+    width:50vw;
+    height:100vh;
+filter: brightness(0.7);
+
+}
+.kilimani-branch{
+    background: url(images/65e5a29a2a2b1c4a493fff75_ankolegrill_Kilimani-Nights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:50vw;
+    height:100vh;
+    filter: brightness(0.7);
+
+}
+.kilimani-details{
+    color:white;
+
+    position: absolute;
+    top:40%;
+    left:40%;
+    line-height:40px;
+    h2{
+        color:brown;
+    font-size:300%;
+    text-align: center;
+    
+    }
+    h1{
+        font-size: 400%;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        color:white;
+    
+    }
+}
+.kitisuru-details{
+ color:white;
+
+position: absolute;
+top:40%;
+left:40%;
+line-height:40px;
+h2{
+    color:brown;
+font-size:300%;
+text-align: center;
+
+}
+h1{
+    font-size: 400%;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+
+}
+
+
+}
+.menu-page{
+    display:flex;
+}
+/* kitisuru menu */
+.menus{
+    display:flex;
+    
+}
+.menu-layout{
+    background: url(images/65c4760165c03d467b650bcb_1.jpg);
+    width:50vw;
+    height:100vh;
+    filter: brightness(0.4);
+
+
+
+}
+.menus-filter{
+    background-color: black;
+    /* width:50vw;
+    height:100vh; */
+}
+.top-nav{
+    display:flex;
+    justify-content: space-evenly;
+    padding:4%;
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+  }
+}
+#breakfast {
+    color:black;
+
+}
+.breakfast-menu h1{
+color:black;
+}
+.layout-details{
+    position:absolute;
+    top:50%;
+   left:30%;
+    .logo{
+        position: fixed;
+        top: 5%;
+        left: 25%;
+        z-index: 2;
+    }
+    img{
+        margin-bottom:5%;
+    }
+    h2{
+        color:white;
+        text-align: center;
+        font-size: 200%;
+
+    }
+    h1{
+        color:brown;
+        font-size: 450%;
+    }
+}
+.hor-navbar{
+    bottom: 5%;
+    left: 3%;
+    padding: 1.5% 0;
+    background-color: black;
+    width: 43%;
+    border-radius: 100px;
+    color: white;
+    word-spacing: 17px;
+
+}
+.top-nav{
+    height:100vh;
+    width:50vw;
+
+}
+/* Reviews page */
+.review-body{
+    background-color: black;
+}
+.reviews{
+    position:relative;
+  justify-items: center;
+  margin-top:30%;
+}
+.testimonials-slider .testimony{
+display:none;
+/* width:40%; */
+background-color: black;
+
+
+}
+.testimonials-slider .testimony.active{
+    display:block;
+    
+}
+.testimony p{
+    color:white;
+    position: absolute;
+    top:3%;
+
+}
+#navigation{
+
+/* box-shadow:1px 1px 2px 1px dimgray; */
+}
+.testimonials-slider i{
+cursor: pointer;
+font-size: 200%;
+color:dimgray;
+
+
+}
+.testimonials-slider i:hover{
+color:gray;
+}
+#prev{
+    position: absolute;
+    left:30%;
+    top:60%;
+}  
+#next{
+    position: absolute;
+   right:30%;
+ 
+
+}
+#review-logo{
+    color:gray;
+}
+#review{
+    position: fixed;
+    top: 40%;
+    left: 46%;
+    z-index: 100;
+    font-size:300%;
+    color:white;
+}
+.testimony i{
+    color:red;
+}
+/* kilimani-menu */
+.menu-options{
+    display:flex;
+width:100vw;
+height:100vh;
+
+}
+.menu-options >div{
+  
+}
+.branch-menu{
+    width:50vw;
+    background: url(images/65c4760165c03d467b650bcb_1.jpg);
+text-align: center;
+line-height: 40px;
+position: static;
+overflow-y: auto;
+
+
+
+
+}
+
+.navigation-menu{
+    display:flex;
+    padding:4%;
+    justify-content: space-evenly;
+    a{
+
+        text-decoration: none;
+        color:white;
+        font-size: 150%;
+    }
+    a:hover{
+        text-decoration: underline yellow 1px;
+
+    }
+}
+
+#branch-name{
+    color:brown;
+    font-size: 450%;
+}
+#title-menu{
+    color:white;
+    text-align: center;
+    font-size: 200%;
+}
+.menu-list{
+    background-color: black;
+    width:50vw;
+    color:white;
+padding:0 2%;
+overflow-y: scroll;
+}
+.specials{
+    color:brown;
+    display:flex;
+    gap:10px;
+
+}
+.prices{
+margin-left:90%;
+
+}
+.foodPrice{
+    display: flex;
+    padding:2% 0;
+}
+.logo-icon img{
+    width:35%;
+}
+.foods{
+ margin:10% 0;
+ 
+}
+.price{
+    position: absolute;
+    right:1%;
+ 
+}

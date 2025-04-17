@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/1731d8bcda.js" crossorigin="anonymous"></script>
+</head>
+<body class="reservations-page">
+
+    <a href="https://www.whatsapp.com"> <i id="whats-app"  class="fa-brands fa-whatsapp"></i></a>
+    <nav>
+        <div class="vertical-bar">
+          <i class="fa-solid fa-list"></i>
+          <div class="categories">
+            <a href="index.html"> Home</a>
+            <a href="#">Our story</a>
+            <a href="menu.html">Menu</a>
+            <a href="reviews.html">Reviews </a>
+            <a href="#">Career</a>
+            <a href="events.html">Events</a>
+            <a href="#">Gallery</a>
+            <a href="#live">Live </a>
+            <a href="contacts.html">Contacts</a>
+          </div>
+        </div>
+        <div class="opening-hours">
+    
+          <a href="opening-hours"><i class="fa-solid fa-clock"></i></a>
+          <div class="opening-details">
+            <p>Opening Hours </p>
+            <p>Kitisuru</p>
+            <p>Mon-Sun</p>
+            <p>9.00am-11.00pm</p>
+            <p>Kilimani</p>
+            <p>Mon-Sun</p>
+            <p>7:30am-11.00pm</p>
+    
+    
+          </div>
+        </div>
+    
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="events.html">Events</a>
+        <a href="#live">Live</a>
+        <a href="contacts.html">Contacts</a>
+        <a class="flip-hover" href="reservation.html">Reservations</a>
+      </nav>
+    <div class="reservation-page">
+        <div class="karibu-reservation">
+            <div id="logo-ankole" > <a href="index.html"></a><img src="images/65c0b0524cdc940f7455af22_logo.svg"></a></div>
+            <h1>Karibu</h1>
+            <h1 id="page-title">Reservation</h1>
+        </div>
+      <div class="reservation-form">
+          <form action="index.html">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your first name" required><br>
+            <label for="location">Location</label><br>
+            <select id="location">
+                <option value="Kitisuru (Open 9 am- Closes 11 pm)">Kitisuru (Open 9 am- Closes 11 pm)</option>
+                    <option value="Kilimani (Hours: Open 7:30- am Closes 11 pm)">Kilimani (Hours: Open 7:30- am Closes 11 pm)</option>
+                    </select><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" placeholder="e.ginfo@gmail.com" required><br>
+            <label for="cellphone">Tell/Cell</label><br>
+            <input type="tel" id="cellphone" placeholder="e.g 0700 000 000" maxlength="19" required><br>
+            <label for="guests">Number of Guests</label><br>
+            <input type="number" id="name" min="1" max="8" placeholder="(maximum of 8 guests only)" required><br>
+            <label for="date">Date</label><br>
+            <input type="date" id="date"  required><br>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+<script>
+  flatpickr("#datepicker", {
+    // Customize Flatpickr options here, including colors
+    theme: "white" // Example: dark theme
+  });
+</script> -->
+            <label for="time">Time</label><br>
+            <input type="time" id="time"  required><br>
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+</body>
+</html>

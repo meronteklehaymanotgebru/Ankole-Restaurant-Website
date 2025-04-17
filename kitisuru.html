@@ -2,83 +2,203 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitisuru Menu</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/1731d8bcda.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitisuru Menu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/1731d8bcda.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="menus">
-        <div class="menu-intro">
-            <nav class="hor-navbar">
-                <div class="vertical-bar">
-                    <i class="fa-solid fa-list"></i>
-                    <div class="categories">
-                        <a href="# home"> Home</a>
-                        <a href="#">Our story</a>
-                        <a href="#menu">Menu</a>
-                        <a href="#reviews">Reviews </a>
-                        <a href="#">Career</a>
-                        <a href="#events">Events</a>
-                        <a href="#">Gallery</a>
-                        <a href="#live">Live </a>
-                        <a href="contacts">Contacts</a>
-                    </div>
-                </div>
-                <div class="opening-hours">
-
-                    <a href="opening-hours"><i class="fa-solid fa-clock"></i></a>
-                    <div class="opening-details">
-                        <p>Opening Hours </p>
-                        <p>Kitisuru</p>
-                        <p>Mon-Sun</p>
-                        <p>9.00am-11.00pm</p>
-                        <p>Kilimani</p>
-                        <p>Mon-Sun</p>
-                        <p>7:30am-11.00pm</p>
-
-
-                    </div>
-                </div>
-
-                <a href="index.html" class="active">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="#events">Events</a>
-                <a href="#live">Live</a>
-                <a href="#contacts">Contacts</a>
-                <a class="flip-hover" href="reservation">Reservations</a>
-            </nav>
-
-            <div class="menu-layout">
-                <div class="layout-details">
-                    <a href="index.html"> <img class="logo" src="images/65c0b0524cdc940f7455af22_logo.svg"
-                            alt="Ankole Logo"></a>
-                    <h2>Menu</h2>
-                    <h1>Kitisuru</h1>
-                </div>
-            </div>
+  <div class="socials">
+    <a id="face-book" href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <a href="https://www.whatsapp.com"> <i id="whats-app" class="fa-brands fa-whatsapp"></i></a>
+  <div class="menu-options">
+    <div class="branch-menu">
+      <img id="ankole-small-logo" src="images/65c0b0524cdc940f7455af22_logo.svg">
+      <h2 id="title-menu">Menu</h2>
+      <h1 id="branch-name">Kitisuru</h1>
+      <nav class="hor-navbar">
+        <div class="vertical-bar">
+          <i class="fa-solid fa-list"></i>
+          <div class="categories">
+            <a href="index.html"> Home</a>
+            <a href="#">Our story</a>
+            <a href="menu.html">Menu</a>
+            <a href="reviews.html">Reviews </a>
+            <a href="#">Career</a>
+            <a href="events.html">Events</a>
+            <a href="#">Gallery</a>
+            <a href="#live">Live </a>
+            <a href="contacts.html">Contacts</a>
+          </div>
         </div>
-        <div class="menus-filter">
-            <main class="top-nav">
-                <a href="#breakfast">Breakfast</a>
-                <a href="#food">Food</a>
-                <a href="#drink">Drinks</a>
-            </main>
-            <div id="breakfast" class="breakfast-menu">
-                <h1>
-                    Breakfast
-                </h1>
-                <p>Kilimani - breakfast is served from 7.30am to 11.00am daily</p>
-                <p>Kitisuru - breakfast is served from 9.00am to 11.00am daily</p>
-                <h1></h1>
-            </div>
+        <div class="opening-hours">
+
+          <a href="opening-hours"><i class="fa-solid fa-clock"></i></a>
+          <div class="opening-details">
+            <p>Opening Hours </p>
+            <p>Kitisuru</p>
+            <p>Mon-Sun</p>
+            <p>9.00am-11.00pm</p>
+            <p>Kilimani</p>
+            <p>Mon-Sun</p>
+            <p>7:30am-11.00pm</p>
+
+
+          </div>
         </div>
+
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="events.html">Events</a>
+        <a href="#live">Live</a>
+        <a href="contacts.html">Contacts</a>
+        <a class="flip-hover" href="reservation.html">Reservations</a>
+      </nav>
     </div>
+    <div class="menu-list">
+      <div class="navigation-menu">
+        <a href="#breakfast">Breakfast</a>
+        <a href="#food">Food</a>
+        <a href="#drinks">Drinks</a>
+
+      </div>
+      <div id="breakfast">
+
+        <h1>Breakfast</h1>
+        <p>Kilimani- breakfast is served from 7.30am to 11.00am daily</p>
+        <p>Kitisuru- breakfast is served from 9.00am to 11.00am daily</p>
+
+        <div class="specials">
+          <h2>COFFEE &#9679;</h2>
+          <h2>TEA &#9679;</h2>
+          <h2>CHOCOLATE</h2>
+        </div>
+
+        <p class="menu-line">Freshly Brewed Coffee<span class="prices">Kshs 250</span></p>
+        <p class="menu-line">Espresso<span class="prices">Kshs 250</span></p>
+        <p class="menu-line">Cappuccino<span class="prices">Kshs 350</span></p>
+        <p class="menu-line">Latte<span class="prices">Kshs 390</span></p>
+        <p class="menu-line">Mocha<span class="prices">Kshs 400</span></p>
+        <p class="menu-line">Macchiato<span class="prices">Kshs 350</span></p>
+        <p class="menu-line">Kenyan Tea<span class="prices">Kshs 250</span></p>
+        <p class="menu-line">Homemade Ginger Chai Masala<span class="prices">Kshs 300</span></p>
+
+      </div>
+      <div id="food" class="foods">
+        <div class="foodPrice">
+          <div>
+            <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+          </div>
+          <div>
+            <h2 class="menu-item">ANKOLE BIG BREAKFAST</h2>
+            <p>2 eggs, 150gms grilled fillet steak, toast, hash browns, grilled <br>tomato, BBQ baked beans
+            </p>
+          </div>
+          <p class="price">Kshs 1500</p>
 
 
+        </div>
+        <div class="foodPrice">
+          <div>
+            <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+          </div>
+          <div>
+            <h2>HASH BROWNS, EGGS AND TOAST</h2>
+            <p>with bacon or sausage</p>
+          </div>
+          <p class="price">Kshs 750</p>
+        </div>
+        <h1>Food</h1>
+        <p class="specials">SOUPS</p>
+        <div class="soup">
+          <p>SPICY WEST AFRICAN MBUZI SOUP</p>
+          <p>Cup Kshs 480 <br>Bowl Kshs 720</p>
+        </div>
+        <div class="soup">
+          <p>SPICY MUSHROOM CREAM MBUZI SOUP</p>
+
+          <p>Cup Kshs 580<br>Bowl Kshs 880</p>
+        </div>
+        <p class="specials">SALADS</p>
+
+        <div class="salad">
+          <div class="logo-img"><img
+              src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+          </div>
+          <div>
+            <h2>THAI BEEF SALAD</h2>
+            <p>grilled beef strips, cucumber, cherry tomato, scallions mint,<br>dhania, crushed peanuts</p>
+
+          </div>
+
+          <p>Kshs 2200</p>
+
+        </div>
+
+        <div class="salad">
+          <div class="logo-img"><img
+              src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+          </div>
+          <div>
+            <h2>KEEN-WA SALAD</h2>
+            <p>quinoa, feta, red pepper, Kalamata olives, red onions, cucumber,basil, <br>mint, chick peas, parsley
+            </p>
+          </div>
+
+          <p>Kshs 1800</p>
+
+        </div>
+
+        <div class="salad">
+          <div class="logo-img"><img
+              src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg">
+          </div>
+          <div>
+            <h2>CHICKEN BACON CAESAR SALAD</h2>
+            <p>chicken, bacon, parmesan, romaine, croutons, garlic caesar dressing</p>
+          </div>
+
+          <p>Kshs 2200</p>
+
+        </div>
+
+      </div>
+      <div id="drinks">
+        <h1>DRINKS</h1>
+        <div class="drink-item">
+          <h3 class="specials">FRESH JUICES</h3>
+          <p>Mango <span>Kshs 700</span></p>
+          <p>Pineapple <span>Kshs 700</span></p>
+          <p>Tree Tomato <span>Kshs 700</span></p>
+          <p>Passion <span>Kshs 700</span></p>
+          <p>Sugarcane <span>Kshs 700</span></p>
+          <p>Orange <span>Kshs 900</span></p>
+          <p>Fruit Cocktail <span>Kshs 700</span></p>
+        </div>
+        <div class="drink-item">
+          <h3 class="specials">FRESH JUICE COCKTAILS</h3>
+          <p>Cherry Coconut Pineapple <span>Kshs 750</span></p>
+          <p>Strawberry Watermelon Ginger <span>Kshs 750</span></p>
+          <p>Strawberry Lemonade <span>Kshs 750</span></p>
+          <p>Pineapple Mint <span>Kshs 750</span></p>
+          <p>Sugarcane Ginger Lime <span>Kshs 750</span></p>
+        </div>
+        <div class="drink-item">
+          <h3 class="specials">MILKSHAKES</h3>
+          <p>Cherry Choc Chip Cookie <span>Kshs 700</span></p>
+          <p>Vanilla <span>Kshs price missing</span></p>
+          <p>Chocolate Fudge <span>Kshs price missing</span></p>
+          <p>Strawberry <span>Kshs 700</span></p>
+          <p>Chocolate Chip Cookie <span>Kshs 700</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

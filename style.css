@@ -16,7 +16,7 @@ body{
 }
 
 #slideshows {
-    background-image: url(images/download.jpeg);
+    /* background-image: url(images/download.jpeg); */
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -52,8 +52,12 @@ body{
 .ankole-logo {
     position: fixed;
     top: 5%;
-    left: 41%;
+    left: 30%;
     z-index: 100;
+    img{
+        width:40vw;
+        height:25vh;
+    }
 
 }
 
@@ -84,15 +88,14 @@ body{
     gap: 20px;
     right: 5%;
     z-index: 200;
-    color: white;
     cursor: pointer;
   
 }
 .socials i{
         border-radius: 50%;
-        border: solid 1px white;
+        border: solid 1px dimgray;
         padding: 40%;
-        color: white;
+        color: dimgray;
 
   
 }
@@ -157,6 +160,24 @@ nav i {
     padding: 2%;
     background-color: darkgray;
     border-radius: 50px;
+    /* --white: white;
+    --black: black;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: .75px;
+    color: #fff;
+    font-family: "Hum 521 Rm",sans-serif;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: #0000;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    min-height: 1.5rem; */
+    /* transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; */
 }
 
 .flip-hover:hover {
@@ -178,7 +199,7 @@ nav i {
     width: 220px;
     bottom: 60%;
     left: 2%;
-    z-index: 999;
+    z-index: 1000;
 
 }
 
@@ -209,7 +230,7 @@ nav i {
     bottom: 60%;
     left: 2%;
     border-radius: 30px;
-    z-index:999;
+    z-index:1000;
 
 }
 
@@ -239,20 +260,21 @@ nav i {
 }
 /* menu file */
 .kitisuru-branch{
-    background: url(images/download.jpeg);
+    background: linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(images/download.jpeg);
     background-repeat: no-repeat;
     width:50vw;
     height:100vh;
-filter: brightness(0.7);
+
 
 }
 .kilimani-branch{
-    background: url(images/65e5a29a2a2b1c4a493fff75_ankolegrill_Kilimani-Nights.jpg);
+    background: linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(images/65e5a29a2a2b1c4a493fff75_ankolegrill_Kilimani-Nights.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width:50vw;
     height:100vh;
-    filter: brightness(0.7);
+    position: relative;
+
 
 }
 .kilimani-details{
@@ -283,7 +305,7 @@ filter: brightness(0.7);
 
 position: absolute;
 top:40%;
-left:40%;
+left:20%;
 line-height:40px;
 h2{
     color:brown;
@@ -386,60 +408,77 @@ color:black;
 /* Reviews page */
 .review-body{
     background-color: black;
+    overflow: hidden;
 }
 .reviews{
-    position:relative;
-  justify-items: center;
-  margin-top:30%;
-}
-.testimonials-slider .testimony{
-display:none;
-/* width:40%; */
-background-color: black;
+position: fixed;
+top:60%;
+left:50%;
+transform: translate(-50%, -50%);
+width:60vw;
+justify-content: center;
+align-items: center;
+z-index:999;
+display: flex;
 
 
 }
-.testimonials-slider .testimony.active{
+
+ .testimony.active{
     display:block;
     
 }
-.testimony p{
-    color:white;
-    position: absolute;
-    top:3%;
+.testimonials-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+width:100%;
+overflow: hidden;
 
-}
-#navigation{
 
-/* box-shadow:1px 1px 2px 1px dimgray; */
 }
 .testimonials-slider i{
 cursor: pointer;
 font-size: 200%;
 color:dimgray;
+transition: color .2s;
 
 
+}
+.testimonials-slider p{
+    color:white;
 }
 .testimonials-slider i:hover{
 color:gray;
 }
-#prev{
+.testimony{
+    flex:0 0 60%;
+    display: none;
+    text-align: center;
+    font-size: 120%;
+}
+#left-qoute{
     position: absolute;
-    left:30%;
-    top:60%;
-}  
-#next{
-    position: absolute;
-   right:30%;
+    left:15%;
+    top:1%;
+    font-size: 350%;
  
 
+}
+#right-qoute{
+    position: absolute;
+    right:15%;
+    bottom:1%;
+    font-size: 350%;
+   
 }
 #review-logo{
     color:gray;
 }
 #review{
     position: fixed;
-    top: 40%;
+    top: 35%;
     left: 46%;
     z-index: 100;
     font-size:300%;
@@ -455,28 +494,25 @@ width:100vw;
 height:100vh;
 
 }
-.menu-options >div{
-  
-}
 .branch-menu{
     width:50vw;
-    background: url(images/65c4760165c03d467b650bcb_1.jpg);
+    background: linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)),url(images/65c4760165c03d467b650bcb_1.jpg);
 text-align: center;
 line-height: 40px;
 position: static;
 overflow-y: auto;
 
-
-
-
 }
 
 .navigation-menu{
     display:flex;
+    position: sticky;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     padding:4%;
+    background-color: black;
     justify-content: space-evenly;
+    z-index:1000;
+    top:0;
     a{
-
         text-decoration: none;
         color:white;
         font-size: 150%;
@@ -507,25 +543,247 @@ overflow-y: scroll;
     color:brown;
     display:flex;
     gap:10px;
+    font-size: 150%;
 
 }
-.prices{
-margin-left:90%;
+#breakfast{
+    color:white;
+}
+.menu-line{
+    display:flex;
+    justify-content: space-between;
+    padding:8px 0;
 
 }
 .foodPrice{
     display: flex;
-    padding:2% 0;
+    padding:3% 0;
+    justify-content: space-between;
 }
-.logo-icon img{
-    width:35%;
+
+.foodPrice img{
+    width:40%;
+  
+    
 }
 .foods{
  margin:10% 0;
  
 }
-.price{
+.soup{
+    display:flex;
+    justify-content: space-between;
+}
+.salad{
+    display: flex;
+    justify-content: space-between;
+    padding:2% 0;
+   
+}
+.logo-img img{
+    width:10vw;
+    height:15vh;
+}
+.drink-item p{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+/* events-page */
+.events-body{
+   overflow: hidden;
+}
+.events-venue{
+display: flex;
+height:100vh;
+margin: 0 auto;
+padding:0;
+overflow-x: scroll;
+
+}
+.venue p:first-child{
+    color:dimgray;
+}
+.venue{
+    color:white;
+text-align: center;
+font-weight: bold;
+
+ }
+ .venue h1{
+    font-size: 300%;
+   
+ }
+ .venue img{
+    width:30vw;
+    height: 100vh;
+  opacity: 0.8;
+ }
+ .venue img:hover{
+    opacity: 1;
+ }
+ .services{
+    color: rgb(231, 190, 115);
+ }
+ #accra-venue{
+    position: relative;
+}
+.accra-details{
     position: absolute;
-    right:1%;
- 
+top:30%;
+left:25%;
+}
+#nairobi-venue{
+    position: relative;
+}
+.nairobi-details{
+    position: absolute;
+    top:30%;
+    left:25%;
+}
+#addis-venue{
+    position: relative;
+}
+.addis-details{
+    position: absolute;
+    top:30%;
+    left:25%;
+}
+#zanzibar-venue{
+    position: relative;
+}
+.zanzibar-details{
+position: absolute;
+top:30%;
+left:25%;
+}
+
+/* Contacts page */
+.branch-contacts{
+    display:flex;
+    color:white;
+    gap:30px;
+    font-size: 150%;
+    line-height: 5px;
+    margin:20% 30%;
+  
+
+}
+.contacts-content{
+    width:100vw;
+    height:100vh;
+    background:  linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(images/garden.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.kitisuru-contact{
+    border:solid white 2px;
+    padding:2%;
+    width:60vw;
+    height:30vh;
+    a{ 
+        text-decoration: none;
+        color:white;
+    }
+}
+.kilimani-contact{
+    border:solid white 2px;
+    padding:2%; 
+    width:60vw;
+    height:35vh;
+    a{ 
+        text-decoration: none;
+        color:white;
+    }
+
+}
+/* Reservation-page */
+.reservations-page{
+    overflow-y: hidden;
+    width:100%;
+}
+.reservation-page
+{
+display:flex;
+width:100vw;
+height:100vh;
+}
+
+#logo-ankole img{
+  width:15vw;
+height:40vh;
+color:dimgrey;
+
+}
+.karibu-reservation{
+    background-image:  linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(images/flower.jpg);
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size:cover;
+    width:50vw;
+    text-align: center;
+    color:white;
+    
+}
+#page-title{
+    color:brown;
+    font-size: 400%;
+}
+.reservation-form{
+    background-color:black;
+    color:white;
+    width:50vw;
+    height: 100vh;
+    padding: 2%;
+
+}
+input, select{
+    background: none;
+    padding:2%;
+    width:90%;
+    margin:2% 0;
+    border:solid #f8f8f861 1px;
+    background-color: black;
+   color-scheme: dark;
+}
+
+select{
+    width:94%;
+    /* background-color:rgb(70, 66, 66); */
+    color:white;
+}
+
+label{
+/* padding:1% 0; */
+}
+button{
+ margin-top:2%;
+    width:95%;
+    padding:3%;
+    border-radius: 20px;
+    font-size: 100%;
+    background-color: blanchedalmond;
+}
+/* live-page */
+.events-list{
+    background: url(images/kerbero.avif);
+    background-repeat: repeat-y;
+    overflow-y: scroll;
+    width:100vw;
+
+
+}
+#live-title{
+    color:white;
+    text-align: center;
+    font-size: 200%;
+}
+.tukatike-live{
+    position: absolute;
+    top:10%;
+    left:10%;
+    text-align: center;
+
 }

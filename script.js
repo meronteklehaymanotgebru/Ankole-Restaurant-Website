@@ -1,18 +1,28 @@
 const slideshow=document.getElementById('slide-image');
  const textOverlay=document.getElementById('text-overlay');
- const slides=[{image:'images/download.jpeg',text:'Welcome'},{image:'images/lights.jpeg',text:'Discover'},{image:'images/Steak.jpeg',text:'Experience'},{image:'images/drink.jpeg',text:'Taste'},{image:'images/ingrdients.jpeg',text:'savour'}];
+ const slides=[{image:'images/download.jpeg',text:'welcome'},{image:'images/lights.jpeg',text:'discover'},{image:'images/Steak.jpeg',text:'experience'},{image:'images/drink.jpeg',text:'taste'},{image:'images/ingrdients.jpeg',text:'savour'}];
 
  let current=0;
  function backgrounds(){
-     slideshow.style.opacity=0
+    //  slideshow.style.opacity=0
+
+     if(current == 0){
+        slideshow.style.backgroundImage=`url(${slides[current].image})`;
+        textOverlay.textContent=slides[current].text;
+        slideshow.style.opacity=1;
+        current=(current+1)%slides.length;
+
+     }
      setTimeout(()=>{
+        console.log('are we here');
+        
          slideshow.style.backgroundImage=`url(${slides[current].image})`;
          textOverlay.textContent=slides[current].text;
          slideshow.style.opacity=1;
          current=(current+1)%slides.length;
  
  
-     },1000)
+     },3000)
  }
  backgrounds();
  setInterval(backgrounds,7000);
@@ -20,7 +30,8 @@ const slideshow=document.getElementById('slide-image');
 //  const sections = document.querySelectorAll('.menu-section');
  
 //  buttons.forEach(button => {
-//    button.addEventListener('click', function() {
+//    button.addEventListener('click', function() {savour
+
 //      // Get the target section from the button data-target attribute
 //      const targetSection = document.getElementById(button.getAttribute('data-target'));
      
@@ -55,18 +66,30 @@ const slideshow=document.getElementById('slide-image');
 // });
 
 // items.forEach(item => observer.observe(item));
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
-const slide = document.querySelectorAll('.testimonials-slider .testimony');
-let currentIndex = 0;
-function showSlide(index) {
-    currentIndex = (index >= slide.length) ? 0 : 
-                   (index < 0) ? slide.length - 1 : index;
-    slide.forEach(slide => slide.classList.remove('active'));
-    slide[currentIndex].classList.add('active');
-}
-if (prevBtn) prevBtn.onclick = () => showSlide(currentIndex - 1);
-if (nextBtn) nextBtn.onclick = () => showSlide(currentIndex + 1);
+// const prevBtn = document.getElementById('prev');
+// const nextBtn = document.getElementById('next');
+// const slide = document.querySelectorAll('.testimonials-slider');
+// let currentIndex = 0;
+// function showSlide(index) {
+//     currentIndex = (index >= slide.length) ? 0 :
+//                    (index < 0) ? slide.length - 1 : index;
+//     slide.forEach(slide => slide.classList.remove('active'));
+//     slide[currentIndex].classList.add('active');
+// }
+// if (prevBtn) prevBtn.onclick = () => showSlide(currentIndex - 1);
+// if (nextBtn) nextBtn.onclick = () => showSlide(currentIndex + 1);
+// // Initialize slideshow
+// showSlide(0);
+//     currentIndex = (index >= slide.length) ? 0 : 
+//                    (index < 0) ? slide.length - 1 : index;
+//     slide.forEach(slide => slide.classList.remove('active'));
+//     slide[currentIndex].classList.add('active');
+// }
+// if (prevBtn) prevBtn.onclick = () => showSlide(currentIndex - 1);
+// if (nextBtn) nextBtn.onclick = () => showSlide(currentIndex + 1);
 
-// Initialize slideshow
-showSlide(0);
+// // Initialize slideshow
+// showSlide(0);
+// script.js
+
+  

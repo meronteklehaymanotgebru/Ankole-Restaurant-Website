@@ -56,9 +56,9 @@
             <h1 id="page-title">Reservation</h1>
         </div>
       <div class="reservation-form">
-          <form action="index.html">
+          <form id="reservation-fill-form">
             <label for="name">Name</label><br>
-            <input type="text" id="name" placeholder="Enter your first name" required><br>
+            <input type="text" id="name" placeholder="Enter your first name" required autofocus><br>
             <label for="location">Location</label><br>
             <select id="location">
                 <option value="Kitisuru (Open 9 am- Closes 11 pm)">Kitisuru (Open 9 am- Closes 11 pm)</option>
@@ -69,21 +69,23 @@
             <label for="cellphone">Tell/Cell</label><br>
             <input type="tel" id="cellphone" placeholder="e.g 0700 000 000" maxlength="19" required><br>
             <label for="guests">Number of Guests</label><br>
-            <input type="number" id="name" min="1" max="8" placeholder="(maximum of 8 guests only)" required><br>
+            <input type="number" id="guests" min="1" max="8" placeholder="(maximum of 8 guests only)" required><br>
             <label for="date">Date</label><br>
             <input type="date" id="date"  required><br>
-            <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
-<script>
-  flatpickr("#datepicker", {
-    // Customize Flatpickr options here, including colors
-    theme: "white" // Example: dark theme
-  });
-</script> -->
             <label for="time">Time</label><br>
             <input type="time" id="time"  required><br>
             <button type="submit">Submit</button>
+    
           </form>
       </div>
     </div>
+    <script>
+      document.getElementById('reservation-fill-form').addEventListener("submit",function(e){
+        e.preventDefault();
+        alert("Reservation submitted successfully!");
+        window.location.href="index.html";
+
+      });
+    </script>
 </body>
 </html>

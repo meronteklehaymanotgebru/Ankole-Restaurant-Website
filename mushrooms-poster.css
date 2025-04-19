@@ -145,3 +145,170 @@ padding:20px;
     padding-left:10%;
 
 }
+
+@media screen and (max-width:500px) {
+    body{
+        margin:0;
+        box-sizing: border-box;
+        padding:0;
+        overflow: hidden;
+    }
+    .poster{
+        width:100vw;
+        background:  linear-gradient(rgba(19, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(images/teamevent.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% ;
+        height:200vh;
+        overflow-y: scroll;
+    
+    }
+    .poster h1{
+        position: absolute;
+        top:60%;
+        left:1%;
+        width:100%;
+        text-align: center;
+        color:white;
+        font-size: 230%;
+    
+    }
+    #whats-app {
+        position: fixed;
+        bottom: 10%;
+        right: 2%;
+        z-index: 200;
+        color: white;
+        font-size: 250%;
+        padding: 2%;
+        border-radius: 50%;
+        border: solid gray 1px;
+        background-color: black;
+        cursor: pointer;
+    
+    }
+    #whats-app:hover{
+        background-color: dimgray;
+    }
+    nav {
+        position: fixed;
+        bottom: 5%;
+        left: 18%;
+        z-index: 80;
+        padding: 3% 1%;
+        background-color: black;
+        width: 60vw;
+        border-radius: 100px;
+        color: white;
+        font-weight: bolder;
+        font-family: Poppins;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+    }
+    nav a,
+    nav i{
+        display:inline-block;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease;
+        vertical-align: middle;
+    }
+    nav i{
+        color:gray;
+        font-size: 150%;
+    }
+    nav a:hover {
+        color: gray;
+    }
+    
+    nav i:hover {
+        background-color: white;
+       border-radius: 50%;
+       padding:50%;
+    
+    }
+    .hidden-nav{
+        display:none;
+    }
+    .flip-hover{
+        background-color: darkgray;
+        border-radius: 50px;
+        padding:1%;
+        width:100px;
+        text-align: center;
+    
+    }
+    .flip-hover p{
+        font-size: small;
+    }
+    .vertical-bar,
+    .opening-hours {
+        position: relative;
+    }
+    
+    .vertical-bar:hover .categories {
+        display: block;
+    }
+    .categories {
+        display: none;
+        position: absolute;
+        background-color: black;
+        width: 220px;
+        bottom: 100%;
+        left: -80px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+    .categories a {
+        font-size: small;
+        color: white;
+        padding: 10px 20px;
+    
+        display: block;
+        text-decoration: none;
+        border-bottom: solid gray 1px;
+    }
+    .categories a:last-child {
+        border-bottom: none;
+    }
+    .opening-hours:hover .opening-details {
+        display: block;
+    }
+    .opening-details p:nth-child(2),
+    .opening-details p:nth-child(5) {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    .opening-details {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: gray;
+        width: 150px;
+        line-height: 10px;
+        bottom: 100%;
+        left: -80px;
+        border-radius: 30px;
+        padding: 15px;
+        z-index: 1000;
+    padding:20px;
+    }
+    .opening-details p {
+        font-size: 15px;
+        font-weight: lighter;
+        text-decoration: none;
+        display:block;
+        padding: 4px 0;
+        padding-left:10%;
+    
+    }
+    .opening-details p:not(:first-child){
+        color:gray;
+    }
+    .opening-details p:first-child{
+        color:white;
+        font-size: large;
+    } 
+}

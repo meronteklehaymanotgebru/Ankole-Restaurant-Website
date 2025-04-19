@@ -56,7 +56,7 @@ body {
     position: fixed;
     top: 5%;
     left: 44%;
-    z-index: 100;
+    z-index: 1;
 
 
 }
@@ -100,7 +100,7 @@ body {
     z-index: 200;
     color: white;
     font-size: 250%;
-    padding:2%;
+    padding:1%;
     border-radius: 50%;
     border: solid gray 1px;
     background-color: black;
@@ -115,7 +115,7 @@ nav {
     bottom: 5%;
     left: 30%;
     z-index: 80;
-    padding: 1% 2%;
+    padding: 1% ;
     background-color: black;
     width: 35%;
     border-radius: 100px;
@@ -149,9 +149,11 @@ nav i:hover {
 
 }
 .flip-hover{
-    padding:2%;
+    padding:1%;
+    width:20%;
     background-color: darkgray;
     border-radius: 50px;
+    text-align: center;
 
 }
 .vertical-bar,
@@ -239,10 +241,9 @@ padding:20px;
 
 .kilimani-details {
     color: white;
-
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 30%;
     line-height: 40px;
 
     h2 {
@@ -515,7 +516,7 @@ padding:20px;
     }
 
     a:hover {
-        text-decoration: underline yellow 1px;
+        color:orange;
 
     }
 }
@@ -784,8 +785,9 @@ select:focus {
     background-color: black;
     color: white;
     width: 50vw;
-    height: 100vh;
+
     padding: 2%;
+    /* box-shadow:1px 2px 1px gray; */
 
 }
 
@@ -892,7 +894,7 @@ button {
     font-size: 170%;
     color: white;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
     .slideshows {
        
         position: relative;
@@ -933,7 +935,7 @@ button {
         position: fixed;
         top: 10%;
         left: 22%;
-        z-index: 100;
+        z-index: 1;
     
     
     }
@@ -1291,7 +1293,7 @@ button {
     .events-venue {
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
         margin: 0 auto;
         padding: 0;
     
@@ -1334,6 +1336,7 @@ button {
     
     #nairobi-venue {
         position: relative;
+        margin-top:-2%;
     }
     
     .nairobi-details {
@@ -1344,6 +1347,7 @@ button {
     
     #addis-venue {
         position: relative;
+        margin-top:-2%;
     }
     
     .addis-details {
@@ -1354,6 +1358,7 @@ button {
     
     #zanzibar-venue {
         position: relative;
+        margin-top:-2%;
     }
     
     .zanzibar-details {
@@ -1367,8 +1372,7 @@ button {
         background-repeat: repeat-y;
         background-size:cover;
         overflow-y: scroll;
-        width: 100vw;
-        height: 100vh;
+    
     
     
     }
@@ -1381,7 +1385,9 @@ button {
     }
     
     .tukatike-live {
-        width: 50%;
+        position: relative;
+height:30vh;
+        width: 100%;
         text-align: center;
         color: white;
         line-height: 0.5;
@@ -1392,26 +1398,25 @@ button {
     .live-events {
         display: flex;
         flex-direction:column;
+    
     }
     
     .live-concerts-detail {
-    
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        gap: 5%;
-    
+      
+    margin-top:60%;
     }
     
     .live-concerts {
         display: flex;
+        flex-direction: column;
+        margin:3% 5%;
     
     }
     
     .events-announcement,
     .live-concerts-detail {
 
-        width: 50vw;
+        width: 100vw;
     }
     
     .live-detail {
@@ -1421,8 +1426,8 @@ button {
     }
     
     .live-concerts img {
-        width: 20vw;
-        height: 40vh;
+        width: 90vw;
+        height: 50vh;
     }
     
     .live-concerts img:hover {
@@ -1431,12 +1436,380 @@ button {
     
     .event-day {
         color:  #D35400;
-        font-size: 120%;
+        font-size: 150%;
     }
     
     .artist {
-        font-size: 100%;
+        font-size: 150%;
         color: white;
     }
+    #logo-ankole img {
+        margin-top:10%;
+        width: 50vw;
+        color: dimgrey;
     
+
+    
+    }
+    /* contacts */
+    .branch-contacts {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 30px;
+        font-size: 100%;
+        line-height: 1;
+        margin: 80% 2% ;
+        width:50vw;
+    
+    
+    
+    }
+    
+    .contacts-content {
+        width: 100vw;
+        height: 120vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/contact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: scroll;
+    
+    }
+    
+    .kitisuru-contact {
+        border: solid white 2px;
+        padding: 2%;
+        width: 90vw;
+        height: 40vh;
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+    .kilimani-contact {
+        border: solid white 2px;
+        padding: 2%;
+        width: 90vw;
+        height: 55vh;
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    
+    }
+    
+    /* Reservation-page */
+    .reservations-page {
+        overflow-y: scroll;
+        overflow-x: hidden;
+  
+    }
+    
+    .reservation-page {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+    
+    input:focus {
+        outline: none;
+        border: 2px solid green;
+    
+        box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    select:focus {
+        outline: none;
+        border: 2px solid rgb(23, 176, 236);
+    
+        box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #logo-ankole img {
+        margin-bottom:10%;
+        width: 50vw;
+   
+        color: dimgrey;
+    
+    }
+    
+    .karibu-reservation {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/flower.jpg);
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        width: 100vw;
+        height:60vh;
+        text-align: center;
+        color: white;
+        position:relative;
+        
+    
+    }
+    .karibu-reservation h1:first-child{
+        position: absolute;
+        top:16%;
+         left:38%;
+        
+
+    }
+    .karibu-reservation h1:nth-child(2){
+        position: absolute;
+        top:33%;
+         left:28%;
+        
+
+    }
+    #page-title {
+        color:  #D35400;
+        font-size: 200%;
+    }
+    
+    .reservation-form {
+        background-color: black;
+        color: white;
+        width: 96vw;
+        height: 150vh;
+        padding: 2%;
+        box-shadow: 2px 2px 2px gray;
+    
+    }
+    
+    input,
+    select {
+        background: none;
+        color:white;
+        padding: 4% 2%;
+        width: 90%;
+        margin: 1% 0;
+        border: solid #f8f8f861 1px;
+        color-scheme: dark;
+    }
+    
+    select {
+        width: 94%;
+        color:dimgray;
+    
+    }
+    
+    button {
+        margin-top: 2%;
+        width: 95%;
+        padding: 4%;
+        border-radius: 10px;
+        font-size: 100%;
+        background-color: #F4CD9C;
+    }
+    
+    .menus {
+        display: flex;
+    
+    }
+    /* kitisuru */
+    .menu-layout {
+        background: url(images/65c4760165c03d467b650bcb_1.jpg);
+        width: 100vw;
+        height: 100vh;
+        filter: brightness(0.4);
+    
+    
+    
+    }
+    
+    .menus-filter {
+        background-color: black;
+        /* width:50vw;
+        height:100vh; */
+    }
+    
+    .top-nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2%;
+    
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+    
+        }
+    }
+    
+    #breakfast {
+        color: black;
+    
+    }
+    
+    .breakfast-menu h1 {
+        color: black;
+    }
+    
+    .layout-details {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    
+        .logo {
+            position: fixed;
+            top: 5%;
+            left: 25%;
+            z-index: 2;
+        }
+    
+        img {
+            margin-bottom: 5%;
+        }
+    
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 150%;
+    
+        }
+    
+        h1 {
+            color:  #D35400;
+            font-size: 250%;
+        }
+    }
+    
+    .hor-navbar {
+        bottom: 7%;
+        left: 15%;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+    
+    }
+    
+    .top-nav {
+        height: 100vh;
+        width: 50vw;
+    
+    }
+    /* kilimani-menu */
+.menu-options {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.branch-menu {
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/65c4760165c03d467b650bcb_1.jpg);
+    text-align: center;
+
+}
+
+.navigation-menu {
+    display: flex;
+    position: sticky;
+    padding: 2%;
+    background-color: black;
+    justify-content: space-evenly;
+    z-index: 1000;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 100%;
+    }
+
+    a:hover {
+        color:orange;
+
+    }
+}
+
+#branch-name {
+    color:  #D35400;
+    font-size: 450%;
+}
+
+#title-menu {
+    color: white;
+    text-align: center;
+    font-size: 100%;
+}
+
+.menu-list {
+    background-color: black;
+    width: 100vw;
+    color: white;
+    padding: 0 2%;
+    overflow-y: scroll;
+    p{
+        font-size: 70%;
+    }
+    h2{
+        font-size: 100%;
+    }
+}
+
+.specials {
+    color:  #D35400;
+    display: flex;
+    gap: 10px;
+    font-size: 80%;
+
+}
+
+#breakfast {
+    color: white;
+}
+
+.menu-line {
+    display: flex;
+  
+
+}
+
+.foodPrice {
+    display: flex;
+    padding: 3% 0;
+  gap:5px;
+}
+
+.foodPrice img {
+    width: 20vw;
+
+
+}
+
+.foods {
+    margin: 10% 0;
+
+}
+
+.soup {
+    display: flex;
+gap:20px;
+}
+
+.salad {
+    display: flex;
+gap:1px;
+    padding: 2% 0;
+
+}
+
+.logo-img img {
+    width: 10vw;
+    height: 15vh;
+}
+
+.drink-item p {
+
+    display: flex;
+   gap:5%;
+
+}
+
 }
